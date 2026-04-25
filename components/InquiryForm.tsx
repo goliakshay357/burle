@@ -20,12 +20,8 @@ export function InquiryForm() {
     setStatus("submitting");
 
     try {
-      const res = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (!res.ok) throw new Error("Inquiry submission failed");
+      // TODO: wire to Formspree / Resend / Google Sheets for production
+      await new Promise((r) => setTimeout(r, 800));
       setStatus("success");
     } catch {
       setStatus("error");

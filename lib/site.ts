@@ -1,7 +1,7 @@
 export const site = {
   name: "Burle Convention",
   shortName: "Burle Convention",
-  tagline: "A function hall built for a thousand guests, in Sadashivpet, Telangana.",
+  tagline: "Where a thousand guests feel like family.",
   description:
     "Burle Convention — a function hall built for a thousand guests in Sadashivpet, Telangana. Weddings, receptions, haldi, mehendi, engagements, and milestone celebrations.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://burleconvention.in",

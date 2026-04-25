@@ -48,12 +48,12 @@ export default function Page() {
         <div className="hero-grain" aria-hidden />
 
         <div className="hero-content">
-          <div className="hero-eyebrow">Sadashivpet · Telangana</div>
+          <div className="hero-eyebrow"><span>Sadashivpet</span><span className="hero-eyebrow-dot" aria-hidden="true">·</span><span>Telangana</span></div>
           <h1 className="hero-title">
             Burle<br />Convention
           </h1>
           <p className="hero-sub">
-            A function hall built for a thousand guests, and one unforgettable evening.
+            Where a thousand guests feel like family.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Page() {
 
       {/* 02 SCALE REVEAL */}
       <section id="reveal" className="reveal" data-screen-label="02 Reveal">
-        <span className="sec-num"><span>02</span> The venue</span>
+        <span className="sec-num">The venue</span>
         <div className="container">
           <h2 className="reveal-line reveal-up">
             A venue, in <span className="accent">four</span> parts.
@@ -96,13 +96,12 @@ export default function Page() {
 
       {/* 03 ABOUT */}
       <section id="about" className="about" data-screen-label="03 About">
-        <span className="sec-num"><span>03</span> About</span>
+        <span className="sec-num">About</span>
         <div className="container">
           <div className="about-grid">
             <div>
-              <div className="kicker reveal-up"><span className="dash">—</span> About the venue</div>
               <h2 className="about-h2 reveal-up" data-stagger="1">
-                Made for the<br />moments that<br />matter most.
+                Made for the moments that matter most.
               </h2>
             </div>
             <div>
@@ -128,11 +127,10 @@ export default function Page() {
 
       {/* 04 SPACES */}
       <section id="spaces" className="spaces" data-screen-label="04 Spaces">
-        <span className="sec-num"><span>04</span> The four spaces</span>
+        <span className="sec-num">The four spaces</span>
         <div className="container">
           <div className="spaces-head">
             <div>
-              <div className="kicker reveal-up"><span className="dash">—</span> Spaces</div>
               <h2 className="spaces-h2 reveal-up" data-stagger="1">The spaces.</h2>
             </div>
           </div>
@@ -141,7 +139,6 @@ export default function Page() {
             <div className="space-row">
               <div className="space-img reveal-up"><PhMainHallWide /></div>
               <div className="reveal-up" data-stagger="1">
-                <div className="space-num">i.</div>
                 <h3 className="space-name">The Main Hall</h3>
                 <p className="space-desc">
                   Pillarless and climate-controlled, designed to seat a thousand under one ceiling. The stage and aisle are proportioned for processions — and the acoustics tuned for everything from vows to live music.
@@ -155,7 +152,6 @@ export default function Page() {
             <div className="space-row flip">
               <div className="space-img reveal-up"><PhLawnWide /></div>
               <div className="reveal-up" data-stagger="1">
-                <div className="space-num">ii.</div>
                 <h3 className="space-name">The Lawn</h3>
                 <p className="space-desc">
                   An open-air space for haldi, mehendi, and cocktail receptions. Ambient lighting strung above turns dusk into evening — a softer, slower counterpoint to the formality of the hall.
@@ -169,7 +165,6 @@ export default function Page() {
             <div className="space-row">
               <div className="space-img reveal-up"><PhFoyerWide /></div>
               <div className="reveal-up" data-stagger="1">
-                <div className="space-num">iii.</div>
                 <h3 className="space-name">The Foyer</h3>
                 <p className="space-desc">
                   A generous pre-function space, where guests arrive at their own pace, greet, and gather before the main event. Designed as a breath, not a bottleneck.
@@ -183,7 +178,6 @@ export default function Page() {
             <div className="space-row flip">
               <div className="space-img reveal-up"><PhSuiteWide /></div>
               <div className="reveal-up" data-stagger="1">
-                <div className="space-num">iv.</div>
                 <h3 className="space-name">The Suites</h3>
                 <p className="space-desc">
                   Private bridal and groom suites for getting ready in calm — with mirrors, seating, and a quiet that&apos;s hard to find in the rest of the day.
@@ -199,25 +193,23 @@ export default function Page() {
 
       {/* 05 EVENTS */}
       <section id="events" className="events" data-screen-label="05 Events">
-        <span className="sec-num"><span>05</span> Events</span>
+        <span className="sec-num">Events</span>
         <div className="container">
           <div className="events-head">
             <div>
-              <div className="kicker reveal-up"><span className="dash">—</span> What we host</div>
               <h2 className="spaces-h2 reveal-up" data-stagger="1">What we host.</h2>
             </div>
           </div>
 
           <div className="events-list reveal-up" data-stagger="2">
             {[
-              ["i.", "Weddings", "Hindu ceremonies, baraats, mandap"],
-              ["ii.", "Receptions", "Stage, dining, dancing"],
-              ["iii.", "Haldi · Mehendi · Engagement", "Daytime & intimate"],
-              ["iv.", "Birthdays", "Milestone celebrations"],
-              ["v.", "Private gatherings", "By invitation"],
-            ].map(([num, name, tag]) => (
+              ["Weddings", "Hindu ceremonies, baraats, mandap"],
+              ["Receptions", "Stage, dining, dancing"],
+              ["Haldi · Mehendi · Engagement", "Daytime & intimate"],
+              ["Birthdays", "Milestone celebrations"],
+              ["Private gatherings", "By invitation"],
+            ].map(([name, tag]) => (
               <div className="event-row" key={name}>
-                <span className="event-num">{num}</span>
                 <span className="event-name">{name}</span>
                 <span className="event-tag">{tag}</span>
                 <span className="event-arrow" aria-hidden>→</span>
@@ -229,13 +221,12 @@ export default function Page() {
 
       {/* 06 AMENITIES */}
       <section id="amenities" className="amenities" data-screen-label="06 Amenities">
-        <span className="sec-num"><span>06</span> Amenities</span>
+        <span className="sec-num">Amenities</span>
         <div className="container">
           <div className="amenities-grid">
             <div>
-              <div className="kicker reveal-up"><span className="dash">—</span> Amenities</div>
               <h2 className="about-h2 reveal-up" data-stagger="1">
-                Considered,<br />end to end.
+                Considered, end to end.
               </h2>
               <p className="about-body reveal-up" data-stagger="2" style={{ marginTop: 24, maxWidth: 340 }}>
                 Everything a thousand-guest evening asks for — already accounted for, so the day itself can be about the people in it.
@@ -262,13 +253,12 @@ export default function Page() {
 
       {/* 07 INQUIRY */}
       <section id="inquiry" className="inquiry" data-screen-label="07 Inquiry">
-        <span className="sec-num"><span>07</span> Plan your event</span>
+        <span className="sec-num">Plan your event</span>
         <div className="container">
           <div className="inquiry-grid">
             <div>
-              <div className="kicker reveal-up"><span className="dash">—</span> Plan your event</div>
               <h2 className="inquiry-h2 reveal-up" data-stagger="1">
-                Tell us about<br />the day.
+                Tell us about the day.
               </h2>
               <p className="inquiry-intro reveal-up" data-stagger="2">
                 Share a few details and we&apos;ll come back to you with availability, a tour of the venue, and the next steps for booking.
@@ -287,7 +277,7 @@ export default function Page() {
 
       {/* 08 LOCATION */}
       <section id="location" className="location" data-screen-label="08 Location">
-        <span className="sec-num"><span>08</span> Find us</span>
+        <span className="sec-num">Find us</span>
         <div className="container">
           <div className="location-grid">
             <div className="map-frame reveal-up">
@@ -299,7 +289,6 @@ export default function Page() {
               />
             </div>
             <div className="reveal-up" data-stagger="1">
-              <div className="kicker"><span className="dash">—</span> Find us</div>
               <h2 className="about-h2" style={{ margin: "16px 0 40px 0", fontSize: "clamp(36px, 3.4vw, 52px)" }}>
                 Sadashivpet,<br />Telangana.
               </h2>
@@ -335,13 +324,12 @@ export default function Page() {
 
       {/* 09 FAQ */}
       <section id="faq" className="faq" data-screen-label="09 FAQ">
-        <span className="sec-num"><span>09</span> Questions</span>
+        <span className="sec-num">Questions</span>
         <div className="container">
           <div className="faq-head">
             <div>
-              <div className="kicker reveal-up"><span className="dash">—</span> Frequently asked</div>
               <h2 className="spaces-h2 reveal-up" data-stagger="1">
-                Questions,<br />answered.
+                Questions, answered.
               </h2>
             </div>
           </div>

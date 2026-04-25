@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   creator: site.name,
   publisher: site.name,
   alternates: { canonical: "/" },
+  icons: { icon: "/favicon.png" },
   openGraph: {
     type: "website",
     locale: site.locale,
@@ -99,6 +100,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`} suppressHydrationWarning>
+      <head>
+        <noscript>
+          <style>{`.reveal-up { opacity: 1 !important; transform: none !important; }`}</style>
+        </noscript>
+      </head>
       <body>
         {children}
         <script
