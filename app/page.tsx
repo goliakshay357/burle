@@ -7,7 +7,6 @@ import {
   PhLawnWide,
   PhMainHallPortrait,
   PhMainHallWide,
-  PhSuitePortrait,
   PhSuiteWide,
 } from "@/components/Placeholders";
 import { site } from "@/lib/site";
@@ -67,10 +66,10 @@ export default function Page() {
 
       {/* 02 SCALE REVEAL */}
       <section id="reveal" className="reveal" data-screen-label="02 Reveal">
-        <span className="sec-num">The venue</span>
+        <span className="sec-num"></span>
         <div className="container">
           <h2 className="reveal-line reveal-up">
-            A venue, in <span className="accent">four</span> parts.
+            The Venue.
           </h2>
 
           <div className="reveal-strip">
@@ -85,10 +84,6 @@ export default function Page() {
             <div className="photo reveal-up" data-stagger="3">
               <PhFoyerPortrait />
               <span className="ph-tag">Foyer</span>
-            </div>
-            <div className="photo reveal-up" data-stagger="4">
-              <PhSuitePortrait />
-              <span className="ph-tag">Bridal suite</span>
             </div>
           </div>
         </div>
@@ -171,19 +166,6 @@ export default function Page() {
                 </p>
                 <ul className="space-feats">
                   <li>Welcome area</li><li>Cocktail-ready</li><li>AC</li><li>Reception desk</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="space-row flip">
-              <div className="space-img reveal-up"><PhSuiteWide /></div>
-              <div className="reveal-up" data-stagger="1">
-                <h3 className="space-name">The Suites</h3>
-                <p className="space-desc">
-                  Private bridal and groom suites for getting ready in calm — with mirrors, seating, and a quiet that&apos;s hard to find in the rest of the day.
-                </p>
-                <ul className="space-feats">
-                  <li>Bridal suite</li><li>Groom suite</li><li>Private</li><li>AC</li>
                 </ul>
               </div>
             </div>
@@ -284,7 +266,7 @@ export default function Page() {
               <iframe
                 loading="lazy"
                 allowFullScreen
-                src="https://www.google.com/maps?q=Sadashivpet,Telangana,India&output=embed"
+                src="https://maps.google.com/maps?q=B+Convention,+Sadashivpet,+Telangana+502291&z=18&output=embed"
                 title="Burle Convention map"
               />
             </div>

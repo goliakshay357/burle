@@ -300,10 +300,13 @@ section {
 }
 .reveal-line .accent { color: var(--gold); }
 .reveal-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 14px;
   margin-top: 88px;
+}
+.reveal-strip .photo {
+  flex: 0 0 calc(min(30%, 380px));
 }
 .reveal-strip .photo {
   aspect-ratio: 3/4.2;
@@ -888,7 +891,8 @@ footer a:hover { color: var(--gold-2); }
 
 /* Responsive */
 @media (max-width: 960px) {
-  .reveal-strip { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .reveal-strip { gap: 10px; }
+  .reveal-strip .photo { flex: 0 0 calc(50% - 5px); }
   .about-grid, .spaces-head, .events-head, .amenities-grid, .inquiry-grid, .location-grid, .faq-head { grid-template-columns: 1fr; gap: 32px; flex-direction: column; align-items: start; text-align: left; }
   .space-row { grid-template-columns: 1fr; gap: 24px; padding: 40px 0; }
   .space-row.flip { direction: ltr; }

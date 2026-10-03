@@ -4,6 +4,13 @@ import { useEffect } from "react";
 
 export function PageEffects() {
   useEffect(() => {
+    // iOS Safari ignores autoplay attribute — must call .play() from JS
+    const video = document.querySelector<HTMLVideoElement>(".hero-media");
+    if (video) {
+      video.muted = true;
+      video.play().catch(() => {});
+    }
+
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const nav = document.getElementById("topnav");
